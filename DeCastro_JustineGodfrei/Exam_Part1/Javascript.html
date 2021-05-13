@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p id="demo"></p>
+
+<script>
+var txt = "TheQuickBrownFoxJumpsOverTheLazyDog".replace(/([a-zA-Z])([A-Z])([a-z])/g, '$1 $2$3');
+var tempTxt = txt.toLowerCase();
+var tempTxt2 = txt[0].toUpperCase() + tempTxt.substring(1);
+document.getElementById("demo").innerHTML = tempTxt2;
+</script>
+
+</body>
+</html> 

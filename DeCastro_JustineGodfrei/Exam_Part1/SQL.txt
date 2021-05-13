@@ -1,0 +1,12 @@
+A. 
+SELECT id, name, date_hired,salary_id,MAX(salary)
+FROM employees
+JOIN departments ON (departments.id = employees.id)
+JOIN salary ON (salary.id = employees.salary_id)
+B.
+SELECT * from employees where
+(date_hired BETWEEN '2017-01-01'AND '2018-12-31')
+C.
+SELECT * FROM employees
+JOIN departments ON (departments.id = employees.id)
+WHERE your date_hired >= '2018-01-01'
