@@ -1,5 +1,5 @@
 A. 
-SELECT id, name, date_hired,salary_id,MAX(salary)
+SELECT id, name, date_hired,salary_id,MAX(salary)         
 FROM employees
 JOIN departments ON (departments.id = employees.id)
 JOIN salary ON (salary.id = employees.salary_id)
@@ -10,3 +10,6 @@ C.
 SELECT * FROM employees
 JOIN departments ON (departments.id = employees.id)
 WHERE your date_hired >= '2018-01-01'
+
+
+//Statements used for getting data from tables. Used Join for combining data's and comparing their respective ID's.

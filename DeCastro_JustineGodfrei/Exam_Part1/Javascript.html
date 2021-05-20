@@ -7,10 +7,10 @@
 <p id="demo"></p>
 
 <script>
-var txt = "TheQuickBrownFoxJumpsOverTheLazyDog".replace(/([a-zA-Z])([A-Z])([a-z])/g, '$1 $2$3');
-var tempTxt = txt.toLowerCase();
-var tempTxt2 = txt[0].toUpperCase() + tempTxt.substring(1);
-document.getElementById("demo").innerHTML = tempTxt2;
+var txt = "TheQuickBrownFoxJumpsOverTheLazyDog".replace(/([a-zA-Z])([A-Z])([a-z])/g, '$1 $2$3');//added spacing on the words.
+var tempTxt = txt.toLowerCase();//change all first to lowercase
+var tempTxt2 = txt[0].toUpperCase() + tempTxt.substring(1);//Then changed to uppercase the first word and the rest to lowercase
+document.getElementById("demo").innerHTML = tempTxt2;//gives the output to the variable with id "demo"
 </script>
 
 </body>
